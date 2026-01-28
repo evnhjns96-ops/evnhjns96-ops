@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Evan Jones — Networking & Cybersecurity</title>
+  <meta name="description" content="Resume site for Evan Jones — Networking & Cybersecurity Specialist." />
+
+  <style>
+    :root { --max: 980px; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin:0; color:#101114; background:#ffffff; line-height:1.55; }
+    header { position: sticky; top: 0; background: rgba(255,255,255,.92); backdrop-filter: blur(10px); border-bottom: 1px solid #eee; z-index: 10; }
+    nav { max-width: var(--max); margin: 0 auto; padding: 14px 18px; display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+    nav a { color:#101114; text-decoration:none; padding:6px 10px; border-radius:10px; }
+    nav a:hover { background:#f2f2f2; }
+    main { max-width: var(--max); margin: 0 auto; padding: 26px 18px 60px; }
+    h1 { font-size: 2rem; margin: 12px 0 6px; letter-spacing:-0.02em; }
+    h2 { margin-top: 34px; font-size: 1.25rem; }
+    .muted { color:#555; }
+    .grid { display:grid; gap:14px; grid-template-columns: 1fr; }
+    @media (min-width: 860px){ .grid { grid-template-columns: 1.2fr .8fr; } }
+    .card { border:1px solid #eee; border-radius:16px; padding:16px; }
+    .row { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:baseline; }
+    .pill { display:inline-block; padding:6px 10px; border:1px solid #e6e6e6; border-radius:999px; margin:6px 8px 0 0; font-size:.92rem; }
+    .btn { display:inline-block; padding:10px 14px; border-radius:12px; border:1px solid #e6e6e6; text-decoration:none; color:#101114; }
+    .btn:hover { background:#f7f7f7; }
+    ul { margin: 10px 0 0 18px; }
+    footer { border-top:1px solid #eee; padding:18px; text-align:center; color:#666; }
+
+    @media (prefers-color-scheme: dark){
+      body{ background:#0b0b0c; color:#f2f2f2; }
+      header{ background: rgba(11,11,12,.88); border-bottom:1px solid #222; }
+      nav a{ color:#f2f2f2; }
+      nav a:hover{ background:#161617; }
+      .card{ border:1px solid #222; }
+      .pill{ border:1px solid #222; }
+      .btn{ border:1px solid #222; color:#f2f2f2; }
+      .btn:hover{ background:#161617; }
+      footer{ border-top:1px solid #222; }
+      .muted{ color:#bdbdbd; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <strong style="margin-right:10px;">Evan Jones</strong>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <span style="margin-left:auto;"></span>
+      <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h1>Networking & Cybersecurity Specialist</h1>
+      <p class="muted">
+        Evan Jones •
+        <a href="mailto:evnhjns96@gmail.com">evnhjns96@gmail.com</a> •
+        <a href="https://www.linkedin.com/in/evan-jones96" target="_blank" rel="noopener">LinkedIn</a>
+        <!-- • <a href="https://github.com/YOURUSERNAME" target="_blank" rel="noopener">GitHub</a> -->
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <p>
+            Hello! I’m a networking and cybersecurity specialist focused on practical troubleshooting, hardening, and
+            hands-on systems work. I’m comfortable in collaborative team environments and enjoy building reliable
+            infrastructure end-to-end (DHCP/DNS, firewalls, VPN, monitoring, and automation).
+          </p>
+          <p class="muted">
+            AAS in Networking & Cybersecurity (BC3, 3.6 GPA; President’s List). Currently finishing a Bachelor’s in
+            Criminology & Criminal Justice (Slippery Rock University).
+          </p>
+          <p>
+            <a class="btn" href="#projects">See projects</a>
+            <a class="btn" href="#contact">Contact</a>
+          </p>
+        </div>
+
+        <div class="card">
+          <strong>Focus areas</strong>
+          <ul>
+            <li>Network configuration & troubleshooting (CLI + GUI)</li>
+            <li>Security tooling: IDS/IPS, Snort, Suricata, hardening</li>
+            <li>Windows Server 2019: AD, GPOs, domain controller labs</li>
+            <li>VPNs (WireGuard), segmentation, packet analysis</li>
+            <li>IT support, ticketing systems, endpoint managment
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="card">
+        <div class="row">
+          <strong>Home Networking Server (Primarily CLI Built)</strong>
+          <span class="muted">DHCP • DNS • Firewall • NAT • VPN • NAS</span>
+        </div>
+        <p class="muted">
+          Solo built and maintain an at-home Linux server (Ubuntu) handling DHCP/DNS, firewalling, NAT, and a WireGuard VPN, plus NAS services. Designed for stability with documentation and rollback discipline. The network topology includes my ISP router (upstream link), Linux PC (Server), and Enterprise-level WAP (covers entire house, AP-mode). An 8TB NAS handles video recordings from multiple IP cameras I have in my home (baby monitor, outdoor security, etc). A robust VPN allows me to access my server resources (including live-feed from cameras) from anywhere. My firewall (UFW) is simple and secure. I use a zero-trust model and close unused ports. Simple yet reliable scripts aid me in server operation. Current additions under construction include a captive portal for guests. 
+        </p> 
+        <img src="Network Topology.pdf" alt="Home Server Architecture Diagram"
+     style="width:100%; border-radius:12px; margin-top:12px; border:1px solid #ddd;">
+        <p class="muted">
+        For more info, images, and videos, check out my LinkedIn. 
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <strong>Intel EMA Rollout (BC3 IT Department project)</strong>
+          <span class="muted">Remote configuration • Pre-OS access</span>
+        </div>
+        <p class="muted">
+          Led a solo project setting up Intel EMA and remotely configuring it across campus workstations to support
+          troubleshooting even before booting into the OS.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <strong>Windows Server 2019 Active Directory Lab</strong>
+          <span class="muted">AD • GPO • internal networking</span>
+        </div>
+        <p class="muted">
+          Built a virtual Windows Server environment with Active Directory, DHCP, internal NIC configuration, and test
+          “dummy accounts” used by other VMs in the lab.
+        </p>
+      </div>
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="card">
+        <div class="row">
+          <strong>IT Department — Butler County Community College (Internship)</strong>
+          <span class="muted">Internship</span>
+        </div>
+        <ul>
+          <li class="muted">Endpoint support, solo projects, systems monitoring.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <strong>Studio Mechanic — IATSE 489</strong>
+          <span class="muted">2025 – Present</span>
+        </div>
+     
+        <ul>
+          <li class="muted">Teamwork, attention to detail, large projects.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="row">
+          <strong>Private Security Officer — St. Moritz Security Services</strong>
+          <span class="muted">2023 – 2025</span>
+        </div>
+        <ul>
+          <li class="muted">Solo work, computer systems, monitoring.</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="card">
+        <span class="pill">Network Configuration (CLI/GUI)</span>
+        <span class="pill">Vulnerability Assessment</span>
+        <span class="pill">IDS/IPS (Snort)</span>
+        <span class="pill">Hardening</span>
+        <span class="pill">Firewalls (pfSense, UFW, Suricata)</span>
+        <span class="pill">DHCP/DNS</span>
+        <span class="pill">Windows / macOS / Linux</span>
+        <span class="pill">Windows Server 2019 (AD, GPO, DC)</span>
+        <span class="pill">Wireshark / tcpdump</span>
+        <span class="pill">VPN (WireGuard)</span>
+        <span class="pill">Honeypots (Pentbox)</span>
+        <span class="pill">PowerShell</span>
+        <span class="pill">Python</span>
+        <span class="pill">Network Segmentation</span>
+        <span class="pill">Threat Hunting</span>
+        <span class="pill">Change Management</span>
+        <span class="pill">BCP</span>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education & Certificates</h2>
+      <div class="card">
+        <ul>
+          <li><strong>AAS, Networking & Cybersecurity</strong> — Butler County Community College (3.6 GPA; President’s List)</li>
+          <li><strong>BA (in progress), Criminology & Criminal Justice</strong> — Slippery Rock University of Pennsylvania</li>
+          <li>TestOut/CompTIA: Cyber Defense Pro, Hybrid Server Pro, Network Pro, PC Pro, Security Pro</li>
+          <li>Hack The Box (HTB) Academy & Labs</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:evnhjns96@gmail.com">evnhjns96@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/evan-jones96" target="_blank" rel="noopener">evan-jones96</a></p>
+        <!-- <p>GitHub: <a href="https://github.com/YOURUSERNAME" target="_blank" rel="noopener">YOURUSERNAME</a></p> -->
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="y"></span> Evan Jones</footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

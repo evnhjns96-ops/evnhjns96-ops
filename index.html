@@ -108,7 +108,7 @@
           <span class="muted">DHCP • DNS • Firewall • NAT • VPN • NAS</span>
         </div>
         <p class="muted">
-           Solo built and maintained an at-home Linux server (Ubuntu) handling DHCP/DNS, firewalling, NAT, and a WireGuard VPN, plus NAS services. Designed for stability with documentation and rollback discipline. The network topology includes my ISP router (upstream link), Linux PC (Server), and Enterprise-level WAP (covers the entire house, AP-mode). An 8TB NAS handles video recordings from multiple IP cameras I have in my home (baby monitor, outdoor security, etc). A robust VPN allows me to access my server resources (including live-feed from cameras) from anywhere. My firewall (UFW) is simple and secure. I use a zero-trust model and close unused ports. Simple yet reliable scripts aid me in server operation. Current additions under construction include a captive portal for guests. 
+          Solo built and maintained an at-home Linux server (Ubuntu) handling DHCP/DNS, firewalling, VLANS, NAT, and a WireGuard VPN, plus NAS services. Designed for stability with documentation and rollback discipline. The network topology includes my ISP router (upstream link), Linux PC (Server), and Enterprise-level WAP (covers the entire house, AP-mode). VLANS separate the physical network into two separate logical networks. I did this so I could have DHCP/DNS on my linux server and my ISP router without doubling them up. An 8TB NAS handles video recordings from multiple IP cameras I have in my home (baby monitor, outdoor security, etc). A robust VPN allows me to access my server resources (including live-feed from cameras) from anywhere. My firewall (UFW) is simple and secure. I use a zero-trust model and close unused ports. Simple yet reliable scripts aid me in server operation. Current additions under construction include a captive portal for guests.  
         </p> 
         <img src="Network Topology.jpg" alt="Home Server Architecture Diagram"
      style="width:100%; border-radius:12px; margin-top:12px; border:1px solid #ddd;">
@@ -236,6 +236,7 @@
   <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
 
 
 

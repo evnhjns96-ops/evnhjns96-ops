@@ -106,6 +106,13 @@
         <div class="row">
           <strong>Home Networking Server (Primarily CLI Built)</strong>
           <span class="muted">DHCP • DNS • Firewall • NAT • VPN • NAS</span>
+          <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; margin-top:14px;">
+  <iframe 
+    src="https://youtu.be/2KMEOgHR0Ao"
+    style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+    allowfullscreen>
+  </iframe>
+</div>
         </div>
         <p class="muted">
           Solo built and maintained an at-home Linux server (Ubuntu) handling DHCP/DNS, firewalling, VLANS, NAT, and a WireGuard VPN, plus NAS services. Designed for stability with documentation and rollback discipline. The network topology includes my ISP router (upstream link), Linux PC (Server), and Enterprise-level WAP (covers the entire house, AP-mode). VLANS separate the physical network into two separate logical networks. I did this so I could have DHCP/DNS on my linux server and my ISP router without doubling them up. An 8TB NAS handles video recordings from multiple IP cameras I have in my home (baby monitor, outdoor security, etc). A robust VPN allows me to access my server resources (including live-feed from cameras) from anywhere. My firewall (UFW) is simple and secure. I use a zero-trust model and close unused ports. Simple yet reliable scripts aid me in server operation. Current additions under construction include a captive portal for guests.  
@@ -236,6 +243,7 @@
   <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
 
 
 

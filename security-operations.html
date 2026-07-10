@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SIEM, IDS & Honeypot Lab case study by Evan Jones.">
+<title>SIEM, IDS & Honeypot Lab | Evan Jones</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Primary navigation">
+    <a class="brand" href="index.html#home" aria-label="Evan Jones home">EJ</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <div id="nav-links" class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#experience">Experience</a>
+      <a href="index.html#documentation">Documentation</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="case-hero">
+  <div class="container case-hero-inner">
+    <a class="back-link" href="index.html#projects">← Back to projects</a>
+    <p class="section-kicker">Security Operations</p>
+    <h1>SIEM, IDS & Honeypot Lab</h1>
+    <p class="case-subtitle">Centralized monitoring and threat visibility across network, server, firewall, and honeypot telemetry.</p>
+    <div class="tag-row case-tags"><span>Wazuh</span><span>Suricata</span><span>Cowrie</span><span>pfSense</span><span>Linux</span><span>SIEM</span><span>IDS</span><span>Centralized Logging</span></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container case-grid">
+    <article class="case-main">
+      <p class="section-kicker">Overview</p>
+      <h2>Project Summary</h2>
+      <p>This project focuses on building visibility into infrastructure activity. Wazuh collects endpoint and server telemetry, pfSense forwards firewall logs, Suricata adds network intrusion detection, and Cowrie captures unauthorized SSH activity in an isolated network segment.</p>
+      <div class="architecture-box">
+        <div class="architecture-node">Internet / WAN</div>
+        <div class="architecture-line"></div>
+        <div class="architecture-node emphasis">pfSense / Core Services</div>
+        <div class="architecture-branches">
+          <div>Management</div><div>Home</div><div>Guest</div><div>Security Lab</div>
+        </div>
+      </div>
+
+      <p class="section-kicker">Implementation</p>
+      <h2>What I Built</h2>
+      <ul class="feature-list"><li>Deployed Wazuh manager, dashboard, and agents across Linux and infrastructure systems.</li><li>Integrated pfSense firewall logs for centralized analysis.</li><li>Configured Suricata IDS to generate network security alerts.</li><li>Deployed Cowrie in a dedicated VLAN with restricted access to trusted networks.</li><li>Reviewed authentication events, attacker commands, firewall activity, and service health.</li><li>Used monitoring results to refine firewall rules and operational documentation.</li></ul>
+
+      <p class="section-kicker">Lessons learned</p>
+      <h2>Key Takeaways</h2>
+      <ul class="feature-list"><li>Useful alerts require context, tuning, and understanding of normal system activity.</li><li>Honeypots must be isolated so observation does not create unnecessary risk.</li><li>Combining endpoint, firewall, and network telemetry provides stronger visibility than any single source.</li></ul>
+    </article>
+
+    <aside class="case-sidebar">
+      <div class="sidebar-card"><h3>Technology Stack</h3><div class="tag-cloud"><span>Wazuh</span><span>Suricata</span><span>Cowrie</span><span>pfSense</span><span>Linux</span><span>SIEM</span><span>IDS</span><span>Centralized Logging</span></div></div>
+      <div class="sidebar-card"><h3>Project Links</h3><a class="button primary full" href="https://github.com/evnhjns96-ops/security-operations-lab" target="_blank" rel="noreferrer">View GitHub Repository</a><a class="button secondary full" href="index.html#contact">Contact Evan</a></div>
+      <div class="sidebar-card"><h3>Security Note</h3><p>All screenshots and documentation should be sanitized before publication. Private keys, public IP addresses, credentials, and sensitive configurations are excluded.</p></div>
+    </aside>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-content">
+    <span>© <span id="year"></span> Evan Jones</span>
+    <span>Systems Administration · Networking · Cybersecurity</span>
+  </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
